@@ -26,10 +26,10 @@ fig1 = ggplot(data = AllAgesFemale,aes(x=Cause,
   geom_text(aes(label=scales::comma(`Death rate per 100 000 population`)),
             hjust=0, nudge_y=-5,
             color = 'black',size = 4.5,fontface="bold") +
-  labs(x="", y="Death rate per 100 000 population",
-       title="Top 10 causes of death in Senegal \n for females aged all ages (2019)",
-       subtitle="Data source : www.who.int",
-       caption="Abdoul Oudouss Diakite")+
+    labs(x="", y="Death rate per 100 000 women of all age",
+       title="Top 10 causes of death in Senegal \nfor women aged all ages (2019)",
+       subtitle="Data source : www.who.int \nTotal women of all ages : 8 349 929",
+       caption="@Abdoul Oudouss Diakite")+
   hrbrthemes::theme_ipsum(grid = "X")
 
 #fig2
@@ -53,11 +53,10 @@ fig2 = ggplot(data = F20_24,aes(x=Cause,y =`Death rate per 100 000 population`,f
   coord_flip() +
   geom_text(aes(label=`Death rate per 100 000 population`), hjust=0, nudge_y=-2.5,
             color = 'black',size = 4.5,fontface="bold") +
-  labs(x="", y="Death rate per 100 000 population",
-       title="Top 10 causes of death in Senegal \n for females aged 20 to 24 years (2019)",
-       subtitle="Data source : www.who.int",
-       caption="Abdoul Oudouss Diakite")+
-
+  labs(x="", y="Death rate per 100,000 women aged 20-24",
+       title="Top 10 causes of death in Senegal \nfor women aged 20 to 24 years (2019)",
+       subtitle="Data source : www.who.int \nTotal women aged 20-24 : 741 748",
+       caption="@Abdoul Oudouss Diakite")+
   hrbrthemes::theme_ipsum(grid = "X")
 fig1;fig2
 ```

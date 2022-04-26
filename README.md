@@ -8,6 +8,9 @@ output:
     fig_caption: yes
     keep_md: yes
 ---
+# Health facilities
+![](SSS.png)
+
 # Causes of deaths 
 ![](README_files/figure-html/unnamed-chunk-1-1.png)<!-- -->![](README_files/figure-html/unnamed-chunk-1-2.png)<!-- -->
 

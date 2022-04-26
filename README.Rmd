@@ -8,6 +8,9 @@ output:
     fig_caption: yes
     keep_md: yes
 ---
+# Health facilities
+![](SSS.png)
+
 # Causes of deaths 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(readxl)

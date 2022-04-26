@@ -29,7 +29,8 @@ fig2 = ggplot(data = F20_24,aes(x=Cause,y =`Death rate per 100 000 population`,
            color = 'black',
            size = 4,hjust = "center",vjust='top',fontface="bold") +
   coord_flip() +
-  geom_text(aes(label=`Death rate per 100 000 population`), hjust=0, nudge_y=-2,
+  geom_text(aes(label=`Death rate per 100 000 population`), 
+            hjust=0, nudge_y=-2,
             color = 'black',size = 4,fontface="bold") +
   labs(x="", y="Death rate per100,000 women aged 20-24",
        title="Top 10 causes of death in Senegal \nfor females aged 20 to 24 years (2019)",

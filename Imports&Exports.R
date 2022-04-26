@@ -1,6 +1,6 @@
 library(ggplot2)
 library(magrittr)
-library(rvest)
+
 #Load data
 Data.SEN <- read_csv("SenegalIndicators.csv", 
                      skip = 4,show_col_types = F) %>% .[,-length(.)]

@@ -8,9 +8,63 @@ output:
     fig_caption: yes
     keep_md: yes
 ---
+# Causes of deaths 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(readxl)
+library(ggplot2)
+library(dplyr)
+#fig1
+#data
+AllAgesFemale <- read_excel("AllAgesFemale.xlsx") %>% 
+  arrange(`Death rate per 100 000 population`) %>% tail(10) %>% mutate(Cause=factor(Cause,Cause))
+#Plot
+fig1 = ggplot(data = AllAgesFemale,aes(x=Cause,
+                                       y =`Death rate per 100 000 population`,
+                                       fill =Cause))+
+  geom_bar(stat="identity",show.legend = F,color = '#FFE4E3',size=.7)+
+  coord_flip() +
+  geom_text(aes(label=scales::comma(`Death rate per 100 000 population`)),
+            hjust=0, nudge_y=-5,
+            color = 'black',size = 4.5,fontface="bold") +
+  labs(x="", y="Death rate per 100 000 population",
+       title="Top 10 causes of death in Senegal \n for females aged all ages (2019)",
+       subtitle="Data source : www.who.int",
+       caption="Abdoul Oudouss Diakite")+
+  hrbrthemes::theme_ipsum(grid = "X")
+
+#fig2
+#data
+F20_24 <- read_excel("20-24Female.xlsx") %>% 
+  arrange(`Death rate per 100 000 population`) %>% tail(10) %>% mutate(Cause=factor(Cause,Cause))
+#Plot
+fig2 = ggplot(data = F20_24,aes(x=Cause,y =`Death rate per 100 000 population`,fill =Cause))+
+  geom_bar(stat="identity",show.legend = F,color = '#FFE4E3',size=.7)+
+  annotate(geom = 'curve',
+           x="Sickle cell disorders and trait", y =  25,
+           xend = "Interpersonal violence",
+           color ='black',
+           yend = 7.6, 
+           curvature = 0.2, arrow = arrow(length = unit(2, "mm")))+
+  annotate(geom = 'text',
+           x="Sickle cell disorders and trait", y = 22,
+           label = 'Interpersonal violence ranks fourth',
+           color = 'black',
+           size = 4,hjust = "center",vjust='top',fontface="bold") +
+  coord_flip() +
+  geom_text(aes(label=`Death rate per 100 000 population`), hjust=0, nudge_y=-2.5,
+            color = 'black',size = 4.5,fontface="bold") +
+  labs(x="", y="Death rate per 100 000 population",
+       title="Top 10 causes of death in Senegal \n for females aged 20 to 24 years (2019)",
+       subtitle="Data source : www.who.int",
+       caption="Abdoul Oudouss Diakite")+
+
+  hrbrthemes::theme_ipsum(grid = "X")
+fig1;fig2
+```
+
 # Expots & Imports (Senegal)
 
-```{r message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(magrittr)
 library(readr)
@@ -28,7 +82,7 @@ data=merge(data1,data,by = 'Date')
 data = na.omit(data)
 ```
 
-```{r}
+```{r echo=FALSE}
 ggplot(data = data,aes(x= as.numeric(Date))) +
   geom_col(aes(y=Imports),fill = "#FF5733",size = 50) +
   geom_col(aes(y=Exports),fill  ="#0A7104",size =50,width = 0.7) +
@@ -115,7 +169,7 @@ ggplot(data = data,aes(x= as.numeric(Date))) +
 
 # Covid 19 ( Senegal )
 
-```{r message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 # Load Covid Data
 library(dplyr)
 library(readr)
@@ -124,7 +178,7 @@ SEN.covid<-  read_csv("https://covid19.who.int/WHO-COVID-19-global-data.csv",
      .[.$Country=='Senegal',] %>% filter(Date_reported >= '2020-03-02')
 ```
 
-```{r}
+```{r echo=FALSE}
 #ploting
 library(ggplot2)
 library(patchwork)

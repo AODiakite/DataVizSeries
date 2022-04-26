@@ -20,8 +20,8 @@ g1= ggplot(data = df,aes(x=Region,y=Count,group = `Type de structure`,
   scale_fill_brewer(palette = "Spectral")+
   geom_text(aes(label = Count,group = `Type de structure`),
             position=position_dodge2(width = 70,padding = 0.3),
-            hjust=1,
-            size = 3.7,color = '#330A01',fontface="bold.italic")+
+            hjust=-0.2,
+            size = 4,color = '#581845',fontface="bold.italic")+
   
   ggtitle("Inventaire des structures de santé au Sénégal (2019)") +
   labs(subtitle = 

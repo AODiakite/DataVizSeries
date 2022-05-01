@@ -1,7 +1,8 @@
 ---
 title: "This github repository's for a data visualization series"
 author: "ABDOUL OUDOUSS DIAKITE"
-date: "26 avril, 2022"
+github : <https://github.com/AODiakite/DataVizSeries>
+date: "28 avril, 2022"
 output:
  html_document:
     toc: yes

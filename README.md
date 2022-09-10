@@ -2,17 +2,24 @@
 title: "This github repository's for a data visualization series"
 author: "ABDOUL OUDOUSS DIAKITE"
 github : <https://github.com/AODiakite/DataVizSeries>
-date: "28 avril, 2022"
+date: "10 September, 2022"
 output:
  html_document:
     toc: yes
     fig_caption: yes
     keep_md: yes
 ---
+
+# Air Pollution (2019)
+
+![](Pollution.png){width="936"}
+
 # Health facilities
+
 ![](SSS.png)
 
-# Causes of deaths 
+# Causes of deaths
+
 ![](README_files/figure-html/unnamed-chunk-1-1.png)<!-- -->![](README_files/figure-html/unnamed-chunk-1-2.png)<!-- -->
 
 # Expots & Imports (Senegal)
@@ -26,7 +33,3 @@ output:
 
 
 ![](README_files/figure-html/unnamed-chunk-5-1.png)<!-- -->![](README_files/figure-html/unnamed-chunk-5-2.png)<!-- -->
-
-
-
-

@@ -9,10 +9,17 @@ output:
     fig_caption: yes
     keep_md: yes
 ---
+
+# Air Pollution (2019)
+
+![](Pollution.png){width="936"}
+
 # Health facilities
+
 ![](SSS.png)
 
-# Causes of deaths 
+# Causes of deaths
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(readxl)
 library(ggplot2)
@@ -231,7 +238,3 @@ p2 = ggplot(SEN.covid,aes(x=Date_reported)) +
 
 p1;p2
 ```
-
-
-
-

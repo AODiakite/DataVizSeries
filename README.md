@@ -2,13 +2,18 @@
 title: "This github repository's for a data visualization series"
 author: "ABDOUL OUDOUSS DIAKITE"
 github : <https://github.com/AODiakite/DataVizSeries>
-date: "10 September, 2022"
+date: "11 February, 2023"
 output:
  html_document:
     toc: yes
     fig_caption: yes
     keep_md: yes
 ---
+
+# Taille des ménages par zones et par région au Sénégal
+
+![](taille_menage.png) 
+
 
 # Air Pollution (2019)
 

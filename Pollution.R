@@ -17,7 +17,7 @@ air_df <- read.csv("air-pollution.csv") %>%
 
 ggplot(data = air_df, aes(x=variable,y= value,fill = Entity))+
   geom_col(position = "dodge",width = .85)+
-  scale_fill_manual(values = c("#041C32","#064663","#ECB365","#B2AB8C"))+
+  scale_fill_manual(values = c("#041C32","#064663","#632626","#B2AB8C"))+
   geom_text(aes(label=scales::comma(label,accuracy = 0.01)), vjust=0.5,hjust = 1,
             color = '#FFFFF6',size = 4,fontface="bold",
             position = position_dodge2(width = 0.85,padding = 0.5)) +

@@ -1,7 +1,7 @@
 ---
 title: "This github repository's for a data visualization series"
 author: "ABDOUL OUDOUSS DIAKITE"
-github : <https://github.com/AODiakite/DataVizSeries>
+link : <https://rpubs.com/AODiakite/DataVizSeries>
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
  html_document:

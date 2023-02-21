@@ -1,7 +1,7 @@
 ---
 title: "This github repository's for a data visualization series"
 author: "ABDOUL OUDOUSS DIAKITE"
-github : <https://github.com/AODiakite/DataVizSeries>
+link : <https://rpubs.com/AODiakite/DataVizSeries>
 date: "21 February, 2023"
 output:
  html_document:

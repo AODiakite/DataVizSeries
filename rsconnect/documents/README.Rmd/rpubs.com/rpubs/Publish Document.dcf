@@ -4,8 +4,8 @@ username:
 account: rpubs
 server: rpubs.com
 hostUrl: rpubs.com
-appId: https://api.rpubs.com/api/v1/document/894106/b5757e9f00d24705b0399fdb7e389779
-bundleId: https://api.rpubs.com/api/v1/document/894106/b5757e9f00d24705b0399fdb7e389779
-url: http://rpubs.com/AODiakite/894106
-when: 1651014066.79673
-lastSyncTime: 1651014066.79676
+appId: https://api.rpubs.com/api/v1/document/1005669/7e045c40e0134b65aba8caec53638bc5
+bundleId: https://api.rpubs.com/api/v1/document/1005669/7e045c40e0134b65aba8caec53638bc5
+url: http://rpubs.com/publish/claim/1005669/82d03eb77b4c445ca412a2b3cd53d895
+when: 1676966264.25048
+lastSyncTime: 1676966264.2505

@@ -10,6 +10,10 @@ output:
     keep_md: yes
 ---
 
+# Assureurs non vie au Sénégal: Répartition du chiffre d'affaires par compagnie en 2021 (En millions de FCFA)
+
+![](assurance.png) 
+
 # Taille des ménages par zones et par région au Sénégal
 
 ![](taille_menage.png) 

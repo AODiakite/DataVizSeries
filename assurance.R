@@ -57,7 +57,7 @@ inset_plot = ggplot(
     axis.text.x = element_text(),
     panel.grid.major = element_blank(), 
     panel.grid.minor = element_blank(),
-    panel.background = element_rect(colour = "black", linewidth =1, fill = "#FBEEE6"),
+    panel.background = element_rect(colour = "black", linewidth =1, fill = "#FDF2E9"),
   )
 
 ggplot(

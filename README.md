@@ -10,6 +10,8 @@ output:
     keep_md: yes
 ---
 
+
+
 # Taille des ménages par zones et par région au Sénégal
 
 ![](taille_menage.png) 

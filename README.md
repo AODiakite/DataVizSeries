@@ -2,7 +2,7 @@
 title: "This github repository's for a data visualization series"
 author: "ABDOUL OUDOUSS DIAKITE"
 github : <https://github.com/AODiakite/DataVizSeries>
-date: "11 February, 2023"
+date: "21 February, 2023"
 output:
  html_document:
     toc: yes
@@ -10,7 +10,9 @@ output:
     keep_md: yes
 ---
 
+# Assureurs non vie au Sénégal: Répartition du chiffre d'affaires par compagnie en 2021 (En millions de FCFA)
 
+![](assurance.png) 
 
 # Taille des ménages par zones et par région au Sénégal
 
